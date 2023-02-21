@@ -15,11 +15,14 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-public class professor_settingsFragment extends Fragment {
+public class professor_settingsFragment extends Fragment implements View.OnClickListener {
 
-    private TextInputLayout tv_costoOra, tv_name, tv_reviewsNumber;
+    private TextInputLayout textField_costoOra, textField_name, textField_bio;
 
+    private TextView tv_hours, tv_materie;
     private ImageView img;
+
+    private Button bt_salva;
 
     public professor_settingsFragment() {
         // Required empty public constructor
@@ -31,9 +34,44 @@ public class professor_settingsFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_professor_settings, container, false);
 
-        img = view.findViewById(R.id.profilePicture_ImageView);
+//        img = view.findViewById(R.id.profilePicture_ImageView);
+
+        textField_name = view.findViewById(R.id.textField_name);
+        textField_bio = view.findViewById(R.id.textField_bio);
+
+        tv_hours = view.findViewById(R.id.tv_hours);
+        tv_hours.setOnClickListener(this);
+        tv_materie = view.findViewById(R.id.tv_materie);
+        tv_materie.setOnClickListener(this);
+
+        bt_salva = view.findViewById(R.id.bt_salva);
+        bt_salva.setOnClickListener(this);
 
         return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.tv_hours:
+                DialogGiorniOrariProfessore dialogGiorniOrariProfessore = new DialogGiorniOrariProfessore();
+                dialogGiorniOrariProfessore.show(getActivity().getSupportFragmentManager(), "Seleziona i giorni e gli orari");
+
+            case R.id.tv_materie:
+                DialogMaterieProfessore dialogMaterieProfessore = new DialogMaterieProfessore();
+                dialogMaterieProfessore.show(getActivity().getSupportFragmentManager(), "Seleziona le materie insegnate");
+
+            case R.id.bt_salva:
+                updateProfessorData();
+        }
+
+
+
+
+    }
+
+    private void updateProfessorData() {
+
     }
 //
 //

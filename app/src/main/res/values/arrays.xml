@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="giorniDellaSettimana" >
+        <item>lunedì</item>
+        <item>martedì</item>
+        <item>mercoledì</item>
+        <item>giovedì</item>
+        <item>venerdì</item>
+        <item>sabato</item>
+        <item>domenica</item>
+    </string-array>
+    <string-array name="Materie">
+        <item>Matematica</item>
+        <item>Biologia</item>
+        <item>Chimica</item>
+        <item>Fisica</item>
+        <item>Inglese</item>
+        <item>Spagnolo</item>
+        <item>Francese</item>
+        <item>Latino</item>
+    </string-array>
+
+</resources>

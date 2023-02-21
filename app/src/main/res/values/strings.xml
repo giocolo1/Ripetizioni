@@ -26,5 +26,9 @@
     <string name="studente">Studente</string>
     <string name="prenota">Prenota</string>
     <string name="orari">Orari</string>
+    <string name="giorniTitolo">Giorni della settimana</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="materieInsegnateTitolo">Materie insegnate:</string>
 
 </resources>
