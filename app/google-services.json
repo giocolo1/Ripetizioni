@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "920855986125",
+    "firebase_url": "https://ripetizioni-53f6a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ripetizioni-53f6a",
+    "storage_bucket": "ripetizioni-53f6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920855986125:android:75c38867d2d62ea8ddce84",
+        "android_client_info": {
+          "package_name": "com.example.ripetizioni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920855986125-e9gpvc6hrb31lg48vthkdsa0kb7e9fln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAByS3-1PCC5TYNMHPGW5RFwkPlxwFmYyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920855986125-e9gpvc6hrb31lg48vthkdsa0kb7e9fln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
